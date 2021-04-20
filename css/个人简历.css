@@ -692,6 +692,9 @@ float: right;
     width: 100%;
     top: 118px;
 }
+.box2_head div h1 {
+    margin-bottom: 10px;
+}
  .grxx li{
   	width: 100%;
   	margin-left: 0;
@@ -709,7 +712,10 @@ float: right;
     	left: 0;
     	width:90%;
     }
-     
+      .xxjl span {
+    font-size: 12px;
+}
+
     .box3_head p{
     	font-size: 12px;
     }
@@ -759,6 +765,7 @@ border-bottom: none;
  .box4_left{
  	width: 90%;
  }
+
    .box4_right{
  	width: 90%;
  	top: 250px;
