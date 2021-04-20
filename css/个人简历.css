@@ -450,7 +450,6 @@ li{
 .box5_head h1{
 	margin-bottom: 30px;
 	border-bottom:solid 5px #f7eccb;
-	 width: 300px;
 	font-size: 42px;
 	margin:0 auto;
 }
@@ -508,8 +507,7 @@ li{
 .box6_head  h1{
 	margin-bottom: 30px;
 	border-bottom:solid 5px #f7eccb;
-	width: 180px;
-	
+	width: 210px;
 	font-size: 42px;
 	margin-left:37.14%;
 }
@@ -519,7 +517,7 @@ li{
 }
 .box6_list li{
 	display: inline-block;
-	width: 30%;
+	width: 33%;
 	 
 	margin: -4px auto;
 }
@@ -782,7 +780,7 @@ border-bottom: none;
     border-bottom: solid 5px #f7eccb;
     margin-bottom: 30px;
     font-size: 30px;
-    margin:0;
+    margin:0 auto;
    
 }
 .box5_list li{
@@ -794,6 +792,9 @@ border-bottom: none;
     padding-top:40px;
    
 } 
+.box6 .jxzp{
+	font-size: 30px;
+}
 .box6_head{
 	width: 90%;
 }
