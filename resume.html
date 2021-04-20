@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title></title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/个人简历.css" />
+    <script type="text/javascript" src="js/jquery-3.4.1.js" ></script>
+    <script type="text/javascript">
+     	
+    $(function(){
+    	 
+      $(".menu").click(function(){
+      
+      	for(var i=0;i<$(".box1_menu>.menu").length;i++){
+      	$(".box1_menu>.menu").eq(i).css("color","white"); 
+      	}
+       	$(this).css("color","#eab109");
+      })
+       $(window).scroll(function(){
+       	var bh=$("body").scrollTop();
+      	console.log(bh);
+       if(bh>=500){
+      
+        $(".wodejianjie").css(" animation","wdjj 2s linear");
+       }
+      	
+      })
+    	})
+    
+    </script>
+	</head>
+	<body>
+		<!--头部-->
+	  <div class="box1">
+	   <div class="box1_head">
+	   <div class="logo">刘恩云</div>
+	    <ul class="box1_menu">
+    <li class="menu"  menu1"><a href="#wzsy">网站首页 </a><div class="line"></div></li>
+    <li class="menu"  menu2"><a href="#wdjj">个人简介 </a><div class="line"></div></li>
+    <li class="menu"  menu3"><a href="#qxhgz">求学和工作</a><div class="line"></li>
+   	<li class="menu"  menu4"><a href="#zyjn">专业技能</a><div class="line"></li> 
+   	<li class="menu"  menu5"><a href="#fwxm">服务项目</a><div class="line"></li>
+    <li class="menu"  menu6"><a href="#jxzp">精选作品</a><div class="line"></li>
+   	<li class="menu"  menu7"><a href="#lxw">联系我</a><div class="line"></li>
+   </ul>
+	   </div>
+       <div class="box1_content">
+       <div class="eclipse"><img src="img/headimg.jpg" class="headimg"></div>
+       <div class="logo2">刘恩云</div>
+       <div class="zwjs">一个稚嫩但又充满激情的初级程序员，目前居住在南宁</div>
+       </div>
+    </div>
+    <!--我的简介部分-->
+    <div class="box2">
+    <div class="box2_head">
+    <div class="wodejianjie">
+    <h1 id="wdjj">我的简介</h1>
+    <p>我的基本信息和一些自我介绍</p>
+    </div>
+    </div>
+  
+    <div class="box2_zp">
+     <div class="img1"></div>
+    </div>
+    <div class="jbxx">
+    <ul class="jbxx_list">
+    <li><h2>基本信息和自我介绍</h2></li>
+		<li><h5>我是一名初级程序员，目前居住在南宁</h5></li>
+		<li><span>软件工程专业，在深蓝软件公司有过一段实习经历，实习岗位是java开发工程师，能够熟练运用java进行项目开发。能使用html,css,javaScript,jQuery进行网页布局，。在校期间主修：软件工程，计算机组成原理，计算机网络，JavaEE，JavaSE，数据库，操作系统。曾获得学校校运会男子3000米第一名和第二名，勤奋踏实的我愿用所学与公司共同发展！</span></li>
+		<li><ul class="grxx"><li>出生日期:<b>1997/08/05</b></li><li>英文名:<b>LiuEnYun</b></li></ul></li>
+		<li><ul class="grxx"><li>民族:<b>汉族</b></li><li>手机:<b>18778365131</b></li></ul></li>
+		<li><ul class="grxx"><li>毕业院校:<b>桂电信科 </b></li><li>电子邮箱:<b>1002442189@qq.com</b></li></ul></li>
+		<li><ul class="grxx"><li>籍贯:<b>广西桂林</b></li><li>现居城市:<b>南宁</b></li></ul></li>
+		<li><ul class="lxfs"><li></li><li></li><li></li><li></li></ul></li>    
+    </ul>
+    </div>
+    </div>
+    <div class="box3">
+    <div class="box3_head">
+    <span id="qxhgz">求学和实习经历</span> 
+    <p>在这里，您可以花极少的时间来了解我的学习经历，您会发现我会写一些基础的功能模块。还会一些网页上的布局</p>
+    </div>
+    <div class="box3_left">
+    <h3>学习经历</h3>
+     <div class="box3_h3_line"></div>
+    <ul class="box3_list">
+    	<li>
+    		<div class="t">2021</div> 
+    	   <div class="xxjl"> <div class="list_eclipse"></div><div class="bline"></div><h6>JavaScript</h6><p>桂电信科</p><span>掌握AJAX的基本使用方法</span></div>
+         </li>
+         <li>
+    		<div class="t">2020</div> 
+    	   <div class="xxjl"> <div class="list_eclipse"></div><div class="bline"></div><h6>CSS3</h6><p>桂电信科</p><span>掌握JavaScript、JQuery的基本使用方法</span></div>
+         </li>
+         <li>
+    		<div class="t">2019</div> 
+    	   <div class="xxjl"> <div class="list_eclipse"></div><div class="bline"></div><h6>HTML5</h6><p>桂电信科</p><span>掌握html、CSS的基本使用方法</span></div>
+         </li>  
+    </ul>
+    </div>
+    <div class="box3_right">
+             <h3>实习经历</h3>
+             <div class="box3_h3_line"></div>
+    <ul class="box3_list">
+    	<li>
+    		<div class="t">2021</div> 
+    	   <div class="xxjl"> <div class="list_eclipse"></div><div class="bline"></div><h6>java后端</h6><p>深蓝</p><span>主要负责部分业务需求分析，对所分配功能模块进行详细设计、功能开发、单元测试、代码优化等工作</span></div>
+         </li>
+         <li>
+    		<div class="t">2020</div> 
+    	   <div class="xxjl"> <div class="list_eclipse"></div><div class="bline"></div><h6>Web前端</h6><p>深蓝</p><span>使用 HTML、CSS、JavaScript、jQuery等工具将产品UI设计稿实现成网站产品，兼容PC端、移动端网页，处理视觉和交互问题。</span></div>
+         </li>
+         <li>
+    		<div class="t">2019</div> 
+    	   <div class="xxjl"> <div class="list_eclipse"></div><div class="bline"></div><h6>实施工程师</h6><p>桂林奥普</p><span>主要负责需求的初步确认；把控项目进度；与客户沟通个性化需求；安装、调试、维护；现场软件应用培训； 协助项目验收；项目维护</span></div>
+         </li>  
+    </ul>
+    </div>
+    </div>
+    <div class="box4">
+    <div class="box4_left"><h2 id="zyjn">专业技能</h2><span></span>
+    	     <ul class="box4_left_list">
+    	     	<li><i>HTML</i><i>80%</i><div class="jdt1"><div class="jdt11"></div></div></li>
+    	     	<li><i>CSS</i><i>75%</i><div class="jdt1"><div class="jdt12"></div></div></li>
+    	   	    <li><i>JAVASCRIPT</i><i>70%</i><div class="jdt1"><div class="jdt13"></div></div></li>
+    	   	    <li><i>JQUERY</i><i>60%</i><div class="jdt1"><div class="jdt14"></div></div></li>
+
+    	     </ul>
+    </div>
+    <div class="box4_right">
+    	
+    </div>
+    </div>
+    <div class="box5">
+    <div class="box5_head">
+    <h1 id="fwxm">我做过的项目</h1>
+    <p>我做过的美食点评系统主要有以下几个模块</p>
+    </div>
+   <ul class="box5_list">
+   <li><div></div><h4>登录注册模块</h4><span> 用户可以进行注册登录，后台可以通过shiro鉴权给用户分配角色</span></li>
+   <li><div></div><h4>发布美食贴模块</h4><span> 用户登录后 可以在主界面可以点击发布来发表自己对美食或者美食店的评价和看法。</span></li>
+   <li><div></div><h4>评论模块</h4><span>用户可以查看其他用户发布的美食贴，可以在对美食贴进行评论。</span></li>
+   <li><div></div><h4>收藏模块</h4><span>用户可以对喜欢的帖子进行收藏，可以在收藏模块对收藏的美食贴进行管理。</span></li>
+   <li><div></div><h4>完善个人信息模块</h4><span>用户可以在此模块对个人信息进行修改和添加，比如可以上传、修改头像，完善生日，修改密码等。</span></li>
+   <li><div></div><h4>管理员模块</h4><span>管理员可以查看所有的美食贴，可以对用户进行管理，比如禁止/允许用户发贴，禁止/允许用户评论，禁止/允许用户登陆。系统管理员可以对普通的管理员进行增加删除操作。</span></li>
+   </ul>
+    </div>
+    <div class="box6">
+    <div class="box6_head">
+    <h1 id="jxzp">我的作品</h1>
+    <div class="line"></div>
+    <p>在这里，您仅需花上10分钟便可以完成一个H5响应式网站，您会发现完全不需要编写一行代码，这就是起飞页自助建站的神奇之处。</p>
+    </div>
+    <ul class="box6_list">
+    	<li><img src="img/1.png" ></li><li><img src="img/2.jpg"></li><li><img src="img/3.jpg"></li>
+    	<li><img src="img/4.jpg"></li><li><img src="img/5.jpg"></li><li><img src="img/6.jpg"></li>
+    	<li><img src="img/7.jpg"></li><li><img src="img/8.jpg"></li><li><img src="img/1.png"></li>	
+    </ul>
+    </div>
+    <div class="box7">
+    <div class=" box7_head">
+    <h1 id="lxw">联系我</h1>
+    <div class="line"></div>
+    </div>
+    <div class="box7_lianxi">
+    <div class="box8">
+    <h2>很期待你的来信</h2>
+    <p>我们尊重您的隐私，不容忍垃圾邮件，不会出售、出租、出租或泄露您的信息</p>
+    <input type="text" value="姓名*" id="name"/>
+    <input type="text" value="邮箱*" id="email"/>
+    <textarea value="内容"></textarea>
+    <input type="button" value="马上提交" class="btn">
+    </div>
+    </div>
+    </div>
+    <div class="bottom">
+    <h1>刘恩云</h1>
+    <ul class="bottom_list"> 
+    	<li></li><li></li>
+    	<li></li><li></li>
+    	 <li></li>
+    </ul>
+    <div class="bottom_line">
+    <P> 2021 web前端</P>
+    <div class="return_top"><a href="#">^</a></div>
+    </div>
+    </div>
+	</body>
+</html>
