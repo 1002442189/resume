@@ -7,9 +7,18 @@
     <link rel="stylesheet" href="css/个人简历.css" />
     <script type="text/javascript" src="js/jquery-3.4.1.js" ></script>
     <script type="text/javascript">
-     	
     $(function(){
-    	 
+    	//自适应小菜单
+    	 $(".right_home").click(function(){ 
+    	 	var block="block";
+    	 	if($(".phone_menu").css("display")== block){
+    	 	$(".phone_menu").css("display","none");	
+    	 	}else {
+    	 		$(".phone_menu").css("display","block");
+    	 	}
+    	 	
+    	 })
+      //点击菜单跳转到各个板块
       $(".menu").click(function(){
       
       	for(var i=0;i<$(".box1_menu>.menu").length;i++){
@@ -17,41 +26,87 @@
       	}
        	$(this).css("color","#eab109");
       })
-       $(window).scroll(function(){
-       	var bh=$("body").scrollTop();
-      	console.log(bh);
-       if(bh>=500){
-      
-        $(".wodejianjie").css(" animation","wdjj 2s linear");
-       }
-      	
-      })
+      //获取页面距离滚动条的相对偏移
+       $(document).scroll(function(){
+       	$(".phone_menu").css("display","none");	
+        if($(window).scrollTop()>100){
+        	$(".box1_head1").css("top","0px");
+        }
+          if($(window).scrollTop()<100){
+        	$(".box1_head1").css("top","-70px");
+        }
+          if($(window).scrollTop()<200){
+        	$(".return_top").css("display","none");
+        }
+            if($(window).scrollTop()>200){
+        	$(".return_top").css("display","block");
+        }
+          })
+         	//点击底部返回到顶部
+          	 $(".return_top").click(function() {
+          	 	 var size;
+                var timer=setInterval(function(){
+                	size= Math.floor(($(window).scrollTop())*0.6);
+                	if(size<500)
+                	size= Math.floor(($(window).scrollTop())*0.4);
+                	console.log(size);
+                 	$(window).scrollTop(size);
+                 	if(size<=1){
+                 		clearInterval(timer);
+                 	}
+                 },100)
+              })
+       
     	})
     
     </script>
 	</head>
 	<body>
+		  <div class="box1_head1">
+	   <div class="logo1">刘恩云</div>
+	  
+	    <ul class="box1_menu1">
+                     <li class="menu"  menu1"><a href="#wzsy">网站首页 </a><div class="line"></div></li>
+                     <li class="menu"  menu2"><a href="#wdjj">个人简介 </a><div class="line"></div></li>
+                     <li class="menu"  menu3"><a href="#qxhgz">求学和实习</a><div class="line"></li>
+                     <li class="menu"  menu4"><a href="#zyjn">专业技能</a><div class="line"></li> 
+                	 <li class="menu"  menu5"><a href="#fwxm">实践项目</a><div class="line"></li>
+                     <li class="menu"  menu6"><a href="#jxzp">精选作品</a><div class="line"></li>
+   	                 <li class="menu"  menu7"><a href="#lxw">联系我</a><div class="line"></li>
+                      </ul>
+	 
+	    </div>
 		<!--头部-->
 	  <div class="box1">
 	   <div class="box1_head">
 	   <div class="logo">刘恩云</div>
-	   
+	    
 	    <ul class="box1_menu">
-    <li class="menu"  menu1"><a href="#wzsy">网站首页 </a><div class="line"></div></li>
-    <li class="menu"  menu2"><a href="#wdjj">个人简介 </a><div class="line"></div></li>
-    <li class="menu"  menu3"><a href="#qxhgz">求学和实习</a><div class="line"></li>
-   	<li class="menu"  menu4"><a href="#zyjn">专业技能</a><div class="line"></li> 
-   	<li class="menu"  menu5"><a href="#fwxm">实践项目</a><div class="line"></li>
-    <li class="menu"  menu6"><a href="#jxzp">精选作品</a><div class="line"></li>
-   	<li class="menu"  menu7"><a href="#lxw">联系我</a><div class="line"></li>
-   </ul>
-	   </div>
+                     <li class="menu"  menu1"><a href="#wzsy">网站首页 </a><div class="line"></div></li>
+                     <li class="menu"  menu2"><a href="#wdjj">个人简介 </a><div class="line"></div></li>
+                     <li class="menu"  menu3"><a href="#qxhgz">求学和实习</a><div class="line"></li>
+                     <li class="menu"  menu4"><a href="#zyjn">专业技能</a><div class="line"></li> 
+                	 <li class="menu"  menu5"><a href="#fwxm">实践项目</a><div class="line"></li>
+                     <li class="menu"  menu6"><a href="#jxzp">精选作品</a><div class="line"></li>
+   	                 <li class="menu"  menu7"><a href="#lxw">联系我</a><div class="line"></li>
+                     </ul>
+	    </div>
        <div class="box1_content">
        <div class="eclipse"><img src="img/headimg.jpg" class="headimg"></div>
+       <div class="right_home"><div></div><div></div><div></div></div>
+       	 <ul class="phone_menu">
+                     <li class="menu"  menu1"><a href="#wzsy">网站首页 </a><div class="line"></div></li>
+                     <li class="menu"  menu2"><a href="#wdjj">个人简介 </a><div class="line"></div></li>
+                     <li class="menu"  menu3"><a href="#qxhgz">求学和实习</a><div class="line"></li>
+                     <li class="menu"  menu4"><a href="#zyjn">专业技能</a><div class="line"></li> 
+                	 <li class="menu"  menu5"><a href="#fwxm">实践项目</a><div class="line"></li>
+                     <li class="menu"  menu6"><a href="#jxzp">精选作品</a><div class="line"></li>
+   	                 <li class="menu"  menu7"><a href="#lxw">联系我</a><div class="line"></li>
+                     </ul>
        <div class="logo2">刘恩云</div>
         <p>求职岗位：java后端开发</p>
        <div class="zwjs">一个稚嫩但又充满激情的初级程序员，目前居住在南宁</div>
-      
+      </div>
        </div>
     </div>
     <!--我的简介部分-->
@@ -72,7 +127,8 @@
 		<li><ul class="lxfs"><li></li><li></li><li></li><li></li></ul></li>    
     </ul>
     </div>
-    </div>
+   </div>
+    
     <div class="box3">
     <div class="box3_head">
     <span id="qxhgz">求学和实习经历</span> 
@@ -180,7 +236,7 @@
     </ul>
     <div class="bottom_line">
     <P> 2021 Java后端开发工程师</P>
-    <div class="return_top"><a href="#">^</a></div>
+    <div class="return_top"><a>^</a></div>
     </div>
     </div>
 	</body>
